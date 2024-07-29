@@ -37,7 +37,7 @@
 .covide-19-alert{
     .container{
         position: relative;
-        left: 6%;
+        // left: 6%;
         .text{
             h1{
                 width: 60%;
@@ -83,6 +83,10 @@ margin-top: $margin-32;
 }
 }
 
+@media (max-width: 767px) {
+.covide-19-alert{flex-direction: column-reverse}
+    
+}
 .contagion{
     text-align: center;
     padding-top: $padding-64;
@@ -212,10 +216,24 @@ margin-top: $margin-32;
                 background-color: $send-color;
                 color: white;
                 transform: translateY(18px);
+                max-width: 100%;
                 
             }
         }
     }
+}
+
+@media (max-width:772px) {
+    .subscript{
+        .container{
+            form{
+                .button{
+                    position: static;
+                }
+            }
+        }
+    }
+    
 }
 
 footer{
