@@ -155,8 +155,7 @@ img {
           background-color: #035755; }
 
 .covide-19-alert .container {
-  position: relative;
-  left: 6%; }
+  position: relative; }
   .covide-19-alert .container .text h1 {
     width: 60%;
     padding-block: 20px; }
@@ -197,6 +196,12 @@ img {
             align-items: center; } }
 @media (max-width: 767px) {
   .about-us .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; } }
+@media (max-width: 767px) {
+  .covide-19-alert {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -305,8 +310,12 @@ img {
     background-color: #F44A45;
     color: white;
     -webkit-transform: translateY(18px);
-            transform: translateY(18px); }
+            transform: translateY(18px);
+    max-width: 100%; }
 
+@media (max-width: 772px) {
+  .subscript .container form .button {
+    position: static; } }
 footer {
   padding-top: 4rem; }
   footer .navbar .container .collapse .navbar-nav .nav-item {
